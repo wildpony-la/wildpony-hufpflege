@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildpony Hufpflege – Kontakt</title>
+
+    <meta name="description" content="Hufbearbeitung im (Ober)Bergischen Land & Rhein-Sieg-Kreis. 
+  Laura Gebauer – Hufpfleger, Hufbearbeiter nach NHC für Barhuf Pferde - Hufschuhberatung.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="newstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h3>Laura Gebauer</h3>
+            <h1>Wildpony Hufpflege</h1>
+            <h2>Hufbearbeitung im (Ober-) Bergischen Land und Rhein-Sieg-Kreis</h2>
+            <a href="index.html" class="btn">Home</a>
+            <a href="leistungen.html" class="btn">Leistungen</a>
+            <a href="kontakt.html" class="btnselected">Kontakt</a>
+            <a href="blog.html" class="btn">Blog</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Kachel 1 -->
+        <section class="kachel kachel-left">
+            <div class="kachel-text">
+                <p>
+                    Du möchtest einen Termin vereinbaren oder hast Fragen zu meiner Arbeit?<br>
+                    Ich freue mich auf Deine Nachricht (E-Mail/WhatsApp) oder Deinen Anruf!
+                </p>
+                <p><strong>E-Mail:</strong>
+                    <a href="mailto:wildpony-hufpflege@gmx.de">wildpony-hufpflege@gmx.de</a>
+                </p>
+                <p><strong>Telefon:</strong>
+                    <a href="tel:+4917537119432">+49 175 37119432</a>
+                </p>
+            </div>
+            <div class="kachel-bild">
+                <img src="images/kontakt.JPG" alt="Das bin ich">
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Include -->
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer-placeholder").innerHTML = data;
+            });
+    </script>
+</body>
+
+</html>

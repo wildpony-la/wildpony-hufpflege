@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildpony Hufpflege – Impressum</title>
+
+    <!-- Meta Description -->
+    <meta name="description" content="Hufbearbeitung im (Ober)Bergischen Land & Rhein-Sieg-Kreis. 
+  Laura Gebauer – Hufpfleger, Hufbearbeiter nach NHC für Barhuf Pferde - Hufschuhberatung.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="newstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h3>Laura Gebauer</h3>
+            <h1>Wildpony Hufpflege</h1>
+            <h2>Hufbearbeitung im (Ober-) Bergischen Land und Rhein-Sieg-Kreis</h2>
+            <a href="index.html" class="btn">Home</a>
+            <a href="leistungen.html" class="btn">Leistungen</a>
+            <a href="kontakt.html" class="btn">Kontakt</a>
+            <a href="blog.html" class="btn">Blog</a>
+        </div>
+    </header>
+
+    <main class="content-page">
+        <section>
+            <h1>Impressum</h1>
+            <h2>Angaben gemäß § 5 TMG</h2>
+            <p>
+                <strong>Wildpony Hufpflege</strong><br>
+                Laura Gebauer<br>
+                Büscherhöfchen 33<br>
+                51491 Overath<br>
+                Deutschland
+            </p>
+
+            <p>
+                Telefon: 015737119432<br>
+                E-Mail: wildpony-hufpflege@gmx.de
+            </p>
+
+            <h3>Berufsbezeichnung</h3>
+            <p>
+                Selbstständige Hufpflegerin<br>
+                Keine tierärztliche Tätigkeit gemäß §1 Tierärztegesetz.
+            </p>
+
+            <h3>Umsatzsteuer</h3>
+            <p>
+                Kleinunternehmerin gemäß §19 UStG – keine Umsatzsteuerpflicht.
+            </p>
+
+            <h3>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h3>
+            <p>
+                Laura Gebauer<br>
+                (Anschrift wie oben)
+            </p>
+
+            <h3>Haftung für Inhalte</h3>
+            <p>
+                Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit
+                und Aktualität der Inhalte kann ich jedoch keine Gewähr übernehmen.
+            </p>
+
+            <h3>Haftung für Links</h3>
+            <p>
+                Diese Website enthält Links zu externen Websites Dritter, auf deren Inhalte ich keinen Einfluss habe.
+                Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber verantwortlich.
+            </p>
+
+            <h3>Urheberrecht</h3>
+            <p>
+                Die durch mich erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht.
+                Eine Vervielfältigung, Bearbeitung, Verbreitung oder jede Art der Verwertung außerhalb der Grenzen des
+                Urheberrechts bedarf meiner schriftlichen Zustimmung.
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer Include -->
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer-placeholder").innerHTML = data;
+            });
+    </script>
+</body>
+
+</html>

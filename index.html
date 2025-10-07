@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildpony Hufpflege – Laura Gebauer</title>
+
+    <!-- Meta Description -->
+    <meta name="description" content="Hufbearbeitung im (Ober)Bergischen Land & Rhein-Sieg-Kreis. 
+  Laura Gebauer – Hufpfleger, Hufbearbeiter nach NHC für Barhuf Pferde - Hufschuhberatung.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="newstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h3>Laura Gebauer</h3>
+            <h1>Wildpony Hufpflege</h1>
+            <h2>Hufbearbeitung im (Ober-) Bergischen Land und Rhein-Sieg-Kreis</h2>
+            <a href="index.html" class="btnselected">Home</a>
+            <a href="leistungen.html" class="btn">Leistungen</a>
+            <a href="kontakt.html" class="btn">Kontakt</a>
+            <a href="blog.html" class="btn">Blog</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Kachel 1 <h2>Meine Arbeit als Hufpflegerin</h2>-->
+        <section class="kachel kachel-left">
+            <div class="kachel-text">
+                <p>
+                    <strong>Hey, ich bin Laura!</strong> Als mobile Hufpflegerin betreue ich Pferde und Ponys durch ein
+                    gesundes Barhufleben.
+                </p>
+                <p>
+                    Ich arbeite nach den Prinzipien der
+                    Natural Hoof Care (NHC) und fördere jeden Huf in seiner natürlichen Balance – für mehr
+                    Gesundheit, Belastbarkeit und Bewegungsfreude. NHC (nach Pete Ramey) beruft sich auf Studien über
+                    Wildpferde, denn sie zeigen uns wie stark und anpassungsfähig ein
+                    natürlicher Huf sein kann. In der freien Natur "bearbeiten sich Hufe von selbst", weil sie bewegt
+                    werden – über
+                    unterschiedliche
+                    Böden, in stetigem
+                    Gleichgewicht mit dem Körper. Nach dem Motto "Wilde Herzen, starke Hufe" begleite ich Pferde auf
+                    ihrem
+                    Weg zu gesunden, tragfähigen Hufen.
+                </p>
+                <div style="text-align: center;">
+                    <img src="images/logo.png" alt="Wildpony Hufpflege Logo" style="width: 15vw; min-width: 100px;">
+                </div>
+                Schau Dich gerne um: Unter <a href="leistungen.html">Leistungen</a> erfährst Du meine Angebote
+                und Preise.
+                <a href="kontakt.html">Melde Dich gerne</a>, wenn Du Fragen hast
+                oder einen Termin vereinbaren möchtest.
+                Ich freue mich darauf, Dich und Dein Pferd kennenzulernen!
+                </p>
+            </div>
+            <div class="kachel-bild">
+                <img src="images/startbild.JPG" alt="Das bin ich">
+            </div>
+        </section>
+
+        <!-- Kachel 2 -->
+        <section class="kachel kachel-right">
+            <div class="kachel-bild">
+                <img src="images/hufbearbeitung.jpeg" alt="Hufpflege am Pferd">
+            </div>
+            <div class="kachel-text">
+                <h2>Über mich</h2>
+                <p>Hauptberuflich bin ich Softwareentwicklerin und in meiner Jugend habe ich glücklicherweise zu den
+                    Pferden gefunden. Die sanften, imposanten Tiere waren für mich immer ein perfekter Ausgleich zu
+                    meinem lernintensiven Studium. Doch genauso wie ich mich in naturwissenschaftliche Themen für die
+                    Uni vertiefen konnte, so faszienierten mich schon vor meinem ersten eigenen Pony die Hufe. Aus einer
+                    handwerklichen Familie stammend, hatte ich wenig Scheu selbst zu raspeln. Ein Hufkurs der F-Balance
+                    hat mein Interesse weiter entfacht. Seit 2019 ist Chiara (oder auch "das kleine Wildpony") in meinem
+                    Leben und mit ihr konnte ich die Hufbearbeitung stetig üben. Ich besuchte weitere Kurse zum Thema
+                    Barhuf und machte eine Fortbildung zum Bekleben eines alternativen Hufschutzes. In diesem Jahr habe
+                    ich eine Ausbildung am Barhuf Institut gestartet und bearbeite mittlerweile Kundenpferde im
+                    Nebenerwerb.</p>
+                <p>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer Include -->
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer-placeholder").innerHTML = data;
+            });
+    </script>
+</body>
+
+</html>

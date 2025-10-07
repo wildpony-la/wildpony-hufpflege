@@ -1,0 +1,305 @@
+:root {
+    --hauptfarbe: #214032;
+    --akzentfarbe: #c0edd4;
+    --hintergrund: #f9f9f9;
+    --textfarbe: #ffffff;
+    /*#f8e8ca;*/
+}
+
+/* Reset */
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: var(--akzentfarbe);
+    color: var(--hauptfarbe);
+}
+
+/* Hero-Bereich */
+.hero {
+    background: url('images/background.jpeg') center/cover no-repeat;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 6rem 2rem;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: auto;
+}
+
+.hero h1 {
+    color: var(--akzentfarbe);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero h2 {
+    font-weight: normal;
+    color: var(--akzentfarbe);
+    margin-bottom: 1rem;
+}
+
+.hero h3 {
+    font-family: Brush Script MT, cursive;
+    font-size: 2rem;
+    font-weight: normal;
+    color: var(--akzentfarbe);
+    margin-bottom: -1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--hauptfarbe);
+    color: var(--akzentfarbe);
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background: var(--akzentfarbe);
+    color: var(--hauptfarbe);
+}
+
+.btnselected {
+    background: var(--akzentfarbe);
+    color: var(--hauptfarbe);
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+/* --- KACHEL-DESIGN mit farbigen Textfeldern --- */
+/* Grundlayout */
+.kachel {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* jedes Element (Text + Bild) exakt gleich groß */
+.kachel-text,
+.kachel-bild {
+    flex: 1 1 50%;
+    aspect-ratio: 1 / 1;
+    /* quadratisch */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Textkachel */
+.kachel-text {
+    background: var(--hauptfarbe);
+    color: var(--textfarbe);
+    padding: 2rem;
+    text-align: left;
+    display: block;
+    /* kein Flex mehr → Überschrift über Text */
+    font-size: 1.1rem;
+    /* größere Schrift */
+    line-height: 1.8;
+    /* mehr Zeilenabstand */
+    letter-spacing: 0.3px;
+    /* leicht offener für bessere Lesbarkeit */
+}
+
+.kachel-text h2 {
+    color: var(--akzentfarbe);
+    font-size: 1.6rem;
+    letter-spacing: 0.5px;
+    margin-top: 0;
+
+}
+
+.kachel-text a {
+    color: var(--akzentfarbe);
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.kachel-text a:hover {
+    color: white;
+    /* hebt sich beim Überfahren ab */
+}
+
+.kachel-bild {
+    position: relative;
+    /* wichtig für das Pseudoelement */
+    overflow: hidden;
+    /* verhindert, dass der Schatten überlappt */
+}
+
+.kachel-bild img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border: none;
+    box-shadow: none;
+    /* kein normaler Schatten */
+}
+
+/* 🎨 Schatten nur am oberen Bildrand */
+.kachel-bild::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    /* Höhe des Schattens */
+    background: rgba(0, 0, 0, 0.35);
+    /* Schattenfarbe */
+    filter: blur(6px);
+    /* macht den Schatten weich */
+    z-index: 2;
+    pointer-events: none;
+    /* kein Einfluss auf Klicks */
+}
+
+/* Abwechselnde Ausrichtung */
+.kachel-left .kachel-text {
+    order: 1;
+}
+
+.kachel-left .kachel-bild {
+    order: 2;
+}
+
+.kachel-right .kachel-text {
+    order: 2;
+}
+
+.kachel-right .kachel-bild {
+    order: 1;
+}
+
+/* --- Footer --- */
+footer {
+    background: var(--akzentfarbe);
+    color: var(--hauptfarbe);
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 0.95rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+footer p {
+    margin: 0;
+    width: 100%;
+}
+
+.footer-links a {
+    color: var(--hauptfarbe);
+    text-decoration: none;
+    margin: 0 0.5rem;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Für Impressum/Datenschutz-Seiten */
+.content-page {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+    line-height: 1.7;
+}
+
+.content-page h1 {
+    color: var(--hauptfarbe);
+    margin-top: 2rem;
+}
+
+.content-page h2 {
+    color: var(--hauptfarbe);
+    margin-top: 1.5rem;
+}
+
+.content-page a {
+    color: var(--akzentfarbe);
+    text-decoration: none;
+}
+
+.content-page a:hover {
+    text-decoration: underline;
+}
+
+
+/* Mobile Ansicht */
+@media (max-width: 768px) {
+
+    .kachel-text,
+    .kachel-bild {
+        flex: 1 1 100%;
+        aspect-ratio: auto;
+    }
+
+    .kachel {
+        flex-direction: column;
+    }
+
+    .kachel-left .kachel-text {
+        order: 1;
+    }
+
+    .kachel-left .kachel-bild {
+        order: 2;
+    }
+
+    .kachel-right .kachel-text {
+        order: 1;
+    }
+
+    .kachel-right .kachel-bild {
+        order: 2;
+    }
+
+    .kachel-text {
+        padding: 1.5rem;
+        text-align: left;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .kachel-text h2 {
+        font-size: 1.4rem;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        display: block;
+        margin-top: 0.25rem;
+    }
+}
