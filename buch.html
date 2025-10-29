@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wildpony Hufpflege</title>
+
+    <!-- Meta Description -->
+    <meta name="description" content="Hufbearbeitung im (Ober)Bergischen Land & Rhein-Sieg-Kreis. 
+  Laura Gebauer – Hufpfleger, Hufbearbeiter nach NHC für Barhuf Pferde - Hufschuhberatung.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="newstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h3>Laura Gebauer</h3>
+            <h1>Wildpony Hufpflege</h1>
+            <h2>Hufbearbeitung im (Ober-) Bergischen Land und Rhein-Sieg-Kreis</h2>
+            <a href="index.html" class="btn">Home</a>
+            <a href="leistungen.html" class="btn">Leistungen</a>
+            <a href="kontakt.html" class="btn">Kontakt</a>
+            <a href="buch.html" class="btnselected">Mein Buch</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Kachel 1 -->
+        <section class="kachel kachel-left">
+            <div class="kachel-text">
+                <p>
+                <h1>Wunder-Wander-Wildpony</h1>
+                <h2>Ein Abenteuer von Köln bis zur niederländischen Nordseeküste.</h2>
+                <p>Im Jahr 2024 habe ich mit meinen Pony Chiara eine vierwöchige Wanderung ans Meer bestritten.
+                    Neben wunderschöner Natur und besonderen Begegnungen mussten wir uns unterwegs einigen Probleme und
+                    Herausforderungen stellen. Mit viel Mut und Durchhaltevermögen sind wir (fast) immer weitergelaufen.
+                    Jeden Tag
+                    erlebten wir Höhen und Tiefen und suchten uns ein Nachtquartier. Diese Reise
+                    war wirklich unvergesslich und hat uns beide stark zusammengeschweißt!
+                    Um die Erlebnisse festzuhalten und mit allen zu teilen, die das Abenteuer lieben oder einfach nur
+                    mehr
+                    davon hören möchten, habe ich es endlich fertiggestellt: das Buch
+                    <strong>Wunder-Wander-Wildpony</strong> über unseren Weg!
+                </p>
+
+                <p>Du findest das Buch im <a href="https://www.epubli.com/shop/wunder-wander-wildpony-9783565064762"
+                        target="_blank" rel="noopener noreferrer">epubli-Store</a>
+                    und auch online oder in jedem Buchhandel. Das Buch kostet
+                    19,99€ inkl. MwSt. Um die Umwelt zu
+                    schonen, wird ein Buch immer erst nach dem Kauf gedruckt, sodass die Lieferzeit etwas länger ist.
+                    Für eine Buchbestellung direkt im epubli-Store fällt die Provision für mich etwas
+                    höher aus, da kein Dritthändler mitbezahlt wird - der Preis ist allerdings überall gleich.
+                </p>
+            </div>
+            <div class="kachel-bild">
+                <img src="images/buch-cover.png" alt="Das Cover von Wunder-Wander-Wildpony">
+            </div>
+        </section>
+    </main>
+    <!-- Footer Include -->
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer-placeholder").innerHTML = data;
+            });
+    </script>
+</body>
+
+</html>
